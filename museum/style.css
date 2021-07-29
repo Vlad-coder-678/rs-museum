@@ -1,0 +1,14 @@
+/* general */
+
+* {
+  font-family: "Forum", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* section header */
+
