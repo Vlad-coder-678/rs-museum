@@ -664,8 +664,12 @@ nav {
   font-size: var(--fs4);
   line-height: var(--lh4);
   text-transform: capitalize;
+  cursor: pointer;
 }
 .tickets_buy_now:hover {
+  background-color: var(--gold);
+}
+.tickets_buy_now:active {
   background-color: var(--gold);
 }
 
