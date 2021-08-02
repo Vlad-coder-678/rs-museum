@@ -273,6 +273,8 @@ nav {
 
 .section_visiting_card:hover .visiting_card_title_underline::after {
   background-color: var(--gold);
+  right: 0%;
+  transition: all 0.3s ease-in-out;
 }
 
 .visiting_card_content {
@@ -308,6 +310,7 @@ nav {
   right: 25%;
   height: 3px;
   background-color: var(--dark-red);
+  transition: all 0.3s ease-in-out;
 }
 
 .visiting_card_desc {
