@@ -26,6 +26,7 @@
               <li class="header_nav_li"><a href="#visiting">Visiting</a></li>
               <li class="header_nav_li"><a href="#explore">Explore</a></li>
               <li class="header_nav_li"><a href="#video">Video</a></li>
+              <li class="header_nav_li"><a href="#gallery">Gallery</a></li>
               <li class="header_nav_li"><a href="#tickets">Tickets</a></li>
               <li class="header_nav_li"><a href="#contacts">Contacts</a></li>
             </ul>
@@ -45,68 +46,49 @@
             >Discover the Louvre</a
           >
         </div>
+        <div class="section_welcome_slider_control">
+          <div class="section_welcome_slider_control_str">
+            <span>01</span> <span> | </span> <span>05</span>
+          </div>
+          <div class="section_welcome_slider_control_squere">
+            <button class="slider_control_squere"></button>
+            <button class="slider_control_squere"></button>
+            <button class="slider_control_squere"></button>
+            <button class="slider_control_squere"></button>
+            <button class="slider_control_squere"></button>
+          </div>
+          <div class="section_welcome_slider_control_arrows">
+            <button class="slider_control_arrow_prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="white" d="M24 11.871l-5-4.871v3h-19v4h19v3z" />
+              </svg>
+            </button>
+            <button class="slider_control_arrow_next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="white" d="M24 11.871l-5-4.871v3h-19v4h19v3z" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
+
+      <!-- section visiting -->
+
       <section class="section_visiting section_light" id="visiting">
         <div class="container">
           <h2 class="section_visiting_title">Virtual tour</h2>
           <div class="underline-title"></div>
           <div class="section_visiting_cards">
-            <!-- <script>
-              const cards = [
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-                {
-                  link: "#",
-                  imgPath: "./assets/img/visiting-Colonnade-Perrault.jpg",
-                  imgAlt: "Colonnade-Perrault",
-                  card_title: "Royal Palace",
-                },
-              ];
-              cards.map((item, index) => {
-                return (
-                  <a class="card_link" href="item.link">
-                    <div class="visiting_card_wrap_img">
-                      <img
-                        src={item.imgPath}
-                        alt={item.imgAlt}
-                        class="visiting_card_img"
-                      />
-                    </div>
-                    <h3 class="visiting_card_title">{item.card_title}</h3>
-                    <p>360 Virtual Tour</p>
-                    <p>Google Street Panorama View</p>
-                  </a>
-                );
-              });
-            </script> -->
             <a
               class="section_visiting_card"
               href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815"
@@ -230,6 +212,9 @@
           </div>
         </div>
       </section>
+
+      <!-- section explorer -->
+
       <section class="section_explore section_dark" id="explore">
         <div class="container">
           <div class="explore_content_left">
@@ -241,7 +226,7 @@
             </p>
             <p class="explore_text">
               It was cleaned in 1984 to remove a
-              <span class="explore_text_enother_color">"yellow veil"</span> of
+              <span class="explore_text_another_color">"yellow veil"</span> of
               dust that had gathered since the previous restoration in the 19th
               century.
             </p>
@@ -250,6 +235,7 @@
               had been damaged in any way, but because it looked different.
             </p>
           </div>
+
           <div class="explore_content_right">
             <img
               class="explore_content_first_img"
@@ -264,95 +250,11 @@
           </div>
         </div>
       </section>
+
+      <!-- section video player -->
+
       <section class="section_video section_light" id="video">
         <div class="container">
-          <div class="section_video_wrap_videoplayer">
-            <video poster="./assets/video/poster.png">
-              <source src="./assets/video/video.mp4" />
-            </video>
-            <div class="section_video_button_play">
-              <img
-                src="./assets/control-panel/video-main-circle.png"
-                alt="button-play"
-                class="main_circle"
-              />
-              <img
-                src="./assets/control-panel/video-main-play.png"
-                alt="button-play"
-                class="main_play"
-              />
-            </div>
-            <div class="section_video_controls">
-              <button class="videoplayer_control_button">
-                <img
-                  src="./assets/control-panel/video-controls-back-arrow-left.png"
-                  alt="button-arrow-back"
-                />
-                <img
-                  src="./assets/control-panel/video-controls-back-arrow-right.png"
-                  alt="button-arrow-back"
-                />
-              </button>
-              <button class="videoplayer_control_button">
-                <img
-                  src="./assets/control-panel/video-controls-play.png"
-                  alt="button-play-small"
-                />
-              </button>
-              <button class="videoplayer_control_button">
-                <img
-                  src="./assets/control-panel/video-controls-next-arrow-left.png"
-                  alt="button-arrow-next"
-                />
-                <img
-                  src="./assets/control-panel/video-controls-next-arrow-right.png"
-                  alt="button-arrow-next"
-                />
-              </button>
-              <input
-                type="range"
-                value="40"
-                min="0"
-                max="100"
-                step="1"
-                class="video_progress_bar"
-              />
-              <button class="videoplayer_control_button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="#ddd"
-                    d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"
-                  />
-                </svg>
-              </button>
-              <input type="range" />
-              <button class="videoplayer_control_button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="30"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="#ddd"
-                    d="M24 9h-4v-5h-5v-4h9v9zm-9 15v-4h5v-5h4v9h-9zm-15-9h4v5h5v4h-9v-9zm9-15v4h-5v5h-4v-9h9z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <script>
-              const progress = document.querySelector(".progress");
-              progress.addEventListener("input", function () {
-                const value = this.value;
-                this.style.background = `linear-gradient(to right, #82CFD0 0%, #82CFD0 ${value}%, #fff ${value}%, white 100%)`;
-              });
-            </script>
-          </div>
           <div class="section_video_content_bottom">
             <h2 class="section_video_title">Video Journey</h2>
             <p class="section_video_text">
@@ -360,9 +262,157 @@
               enjoy masterpieces such as Mona Lisa or Hammurabi's Code
             </p>
           </div>
+
+          <div class="wrap_videoPlayer" id="videoDiv">
+            <div class="main_interface">
+              <div class="video_wrapper">
+                <video id="video" poster="./assets/video/poster.png"></video>
+              </div>
+              <div
+                class="main_interface_button_play big_play unSelected"
+                id="big_play"
+              >
+                <img src="./assets/img/video-main-play.png" alt="button-play" />
+              </div>
+            </div>
+
+            <div class="section_video_controls" id="controls">
+              <div class="controls_item">
+                <!-- class="control_button a_button control unSelected" -->
+                <button class="control_button play unSelected" id="play">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="transform: scale(1.5)"
+                  >
+                    <path fill="#ddd" d="M3 22v-20l18 10-18 10z" />
+                  </svg>
+                </button>
+                <!-- class="control_button a_button control unSelected" -->
+                <button class="control_button pause selected" id="pause">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="transform: scale(1.5)"
+                  >
+                    <path
+                      fill="#ddd"
+                      d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="controls_item wrap_progress_bar">
+                <input
+                  type="range"
+                  id="video_progress_bar"
+                  class="video_progress_bar"
+                />
+              </div>
+
+              <div class="controls_item">
+                <!-- class="videoplayer_control_button a_button control unSelected" -->
+                <button class="control_button mute unSelected" id="mute">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#ddd"
+                      d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"
+                    />
+                  </svg>
+                </button>
+                <input type="range" id="volume_bar" class="volume_bar" />
+                <button
+                  class="control_button fullScreen unSelected"
+                  id="fullScreen"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="30"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#ddd"
+                      d="M24 9h-4v-5h-5v-4h9v9zm-9 15v-4h5v-5h4v9h-9zm-15-9h4v5h5v4h-9v-9zm9-15v4h-5v5h-4v-9h9z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="videoSelection" class="videoSelection">
+            <div class="video-youtube-wrap">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ejer80zJBDI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-youtube-wrap">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-youtube-wrap">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MufP60vnLnU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="section_videoPlayer_slider_control">
+            <div class="section_videoPlayer_slider_octagon">
+              <button class="slider_control_octagon"></button>
+              <button class="slider_control_octagon"></button>
+              <button class="slider_control_octagon"></button>
+              <button class="slider_control_octagon"></button>
+              <button class="slider_control_octagon"></button>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section_tickets section_dark" id="tickets">
+
+      <!--section gallery-->
+
+      <section class="section_gallery section_dark" id="gallery">
+        <div class="section_gallery container">
+          <h2 class="section_gallery-title">Art gallery</h2>
+          <div class="section_gallery-outer">
+            <div class="section_gallery-inner" id="gallery_inner"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tickets section -->
+
+      <section class="section_tickets section_light" id="tickets">
         <div class="container">
           <h2 class="section_tickets_title">Buy tickets</h2>
           <div class="section_tickets_title_underline"></div>
@@ -466,6 +516,15 @@
           </div>
         </div>
       </section>
+
+      <!-- section paralax effect -->
+
+      <div class="section_paralax-wrap">
+        <img src="./assets/img/parallax.jpg" alt="image for paralax effect" />
+      </div>
+
+      <!-- section contacts -->
+
       <section class="section_contacts section_light" id="contacts">
         <div class="container">
           <h2 class="section_contacts_title">Contacts</h2>
@@ -474,9 +533,11 @@
             <div class="section_contacts_content_left">
               <h4>Palais Royal</h4>
               <h4>Musee du Louvre</h4>
-              <p>address:75001 Paris, France</p>
-              <p>phone:+33(0) 1 40 20 50 50</p>
-              <p>mail:info@louvre.fr</p>
+              <div>
+                <p>address:75001 Paris, France</p>
+                <p>phone:+33(0) 1 40 20 50 50</p>
+                <p>mail:info@louvre.fr</p>
+              </div>
             </div>
             <div class="section_contacts_content_right">
               <img src="./assets/img/contacts-bg.png" alt="map adress" />
@@ -485,24 +546,27 @@
         </div>
       </section>
     </main>
+
     <footer class="footer section_dark">
       <div class="container">
         <div class="footer_logo">
           <img class="footer_logo_img" src="./assets/svg/logo.svg" alt="logo" />
           <span class="footer_logo_text">Louvre</span>
         </div>
+
         <div class="footer_wrap_nav">
           <nav class="footer_nav">
             <ul class="footer_nav_ul">
-              <li class="footer_nav_li"><a href="#welcome">Welcome</a></li>
               <li class="footer_nav_li"><a href="#visiting">Visiting</a></li>
               <li class="footer_nav_li"><a href="#explore">Explore</a></li>
               <li class="footer_nav_li"><a href="#video">Video</a></li>
+              <li class="footer_nav_li"><a href="#gallery">Gallery</a></li>
               <li class="footer_nav_li"><a href="#tickets">Tickets</a></li>
               <li class="footer_nav_li"><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
         </div>
+
         <div class="footer_wrap_social">
           <nav class="footer_social">
             <ul class="footer_social_ul">
@@ -545,6 +609,17 @@
           </nav>
         </div>
       </div>
+
+      <div class="footer_underline"></div>
+
+      <div class="container">
+        <div class="footer_description">
+          <p>&copy; 2021</p>
+          <p>The Rolling Scopes School</p>
+          <p>Vladimir Mezencev</p>
+        </div>
+      </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
