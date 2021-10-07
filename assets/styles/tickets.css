@@ -1,0 +1,178 @@
+.section_tickets {
+  display: none;
+}
+
+.section_tickets_title {
+  color: var(--gold);
+  padding-top: 86px;
+}
+
+.section_tickets_title_underline {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.section_tickets_title_underline::after {
+  content: "";
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--dark-red);
+}
+
+.tickets_content {
+  display: flex;
+  padding-top: 18px;
+}
+
+.tickets_content_left {
+  flex-basis: 50%;
+  height: 615px;
+  margin-bottom: 90px;
+}
+
+.tickets_content_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tickets_content_right {
+  flex-basis: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+
+.tickets_right_start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tickets_content_right h4,
+.tickets_content_right label {
+  color: var(--bg-dark);
+  margin-bottom: 50px;
+}
+
+.tickets_right_end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateX(140px);
+}
+
+.tickets_amount_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.tickets_amount_button:hover > svg > path {
+  fill: var(--gold);
+}
+
+.tickets_amount_input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 50px;
+}
+
+/* The container */
+
+.container_btn_radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container_btn_radio:hover {
+  color: var(--gold);
+}
+
+/* Hide the browser's default radio button */
+.container_btn_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #000;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.container_btn_radio:hover input ~ .checkmark {
+  /* background-color: #ccc; */
+  border: 1px solid #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_btn_radio input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_btn_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_btn .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.tickets_buy_now {
+  width: 175px;
+  height: 50px;
+  background-color: var(--white);
+  font-family: var(--ff2);
+  font-weight: var(--fw3);
+  font-size: var(--fs4);
+  line-height: var(--lh4);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.tickets_buy_now:hover {
+  background-color: var(--gold);
+}
+
+.tickets_buy_now:active {
+  background-color: var(--gold);
+}

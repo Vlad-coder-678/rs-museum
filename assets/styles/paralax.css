@@ -1,0 +1,8 @@
+.section_paralax-wrap {
+  display: none;
+  width: 100%;
+  height: 440px;
+  background: url("assets/img/parallax.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

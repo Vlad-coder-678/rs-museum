@@ -1,0 +1,234 @@
+/* links on header and footer sections */
+
+a {
+  font-family: var(--ff-a);
+  font-weight: var(--fw-a);
+  font-style: var(--fst1);
+  color: var(--white);
+  font-size: var(--fs-a-1920);
+  line-height: var(--lh-a-1920);
+}
+
+/* text on welcome section 'from the castle to the museum' */
+
+h1 {
+  font-family: var(--ff-h1);
+  font-weight: var(--fw-h1);
+  font-style: var(--fst1);
+  color: var(--white);
+  font-size: var(--fs-h1-1920);
+  line-height: var(--lh-h1-1920);
+  letter-spacing: var(--ls-h1-1920);
+}
+
+/* title welcome section */
+
+h2 {
+  font-family: var(--ff-h2);
+  font-weight: var(--fw-h2);
+  font-style: var(--fst1);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: var(--fs-h2-1920);
+  line-height: var(--lh-h2-1920);
+  letter-spacing: var(--ls-h2-1920);
+}
+
+/* title other sections */
+
+h3 {
+  font-family: var(--ff-h2);
+  font-weight: var(--fw-h3);
+  font-style: var(--fst1);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: var(--fs-h3-1920);
+  line-height: var(--lh-h3-1920);
+  letter-spacing: var(--ls-h3-1920);
+}
+
+/* Title for visiting cards */
+
+h4 {
+  font-family: var(--ff-h4);
+  font-weight: var(--fw-h4);
+  font-style: var(--fst1);
+  color: var(--white);
+  font-size: var(--fs-h4-1920);
+  line-height: var(--lh-h4-1920);
+}
+
+/* Title on tickets section and contacts section */
+
+h5 {
+  font-family: var(--ff-h5);
+  font-weight: var(--fw-h5);
+  font-style: var(--fst1);
+  color: var(--white);
+  font-size: var(--fs-h5-1920);
+  line-height: var(--lh-h5-1920);
+}
+
+/* text on explore section */
+
+p {
+  font-family: var(--ff-p);
+  font-weight: var(--fw-p);
+  font-style: var(--fst1);
+  color: var(--white);
+  font-size: var(--fs-p-1920);
+  line-height: var(--lh-p-1920);
+}
+
+.section_dark {
+  color: var(--white);
+  background-color: var(--bg-dark);
+}
+
+.section_light {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 1024px) {
+  a {
+    font-size: var(--fs-a-1024);
+    line-height: var(--lh-a-1024);
+  }
+
+  h1 {
+    font-size: var(--fs-h1-1024);
+    line-height: var(--lh-h1-1024);
+    letter-spacing: var(--ls-h1-1024);
+  }
+
+  h2 {
+    font-size: var(--fs-h2-1024);
+    line-height: var(--lh-h2-1024);
+    letter-spacing: var(--ls-h2-1024);
+  }
+
+  h3 {
+    font-size: var(--fs-h3-1024);
+    line-height: var(--lh-h3-1024);
+    letter-spacing: var(--ls-h3-1024);
+  }
+
+  h4 {
+    font-size: var(--fs-h4-1024);
+    line-height: var(--lh-h4-1024);
+    letter-spacing: var(--ls-h4-1024);
+  }
+
+  h5 {
+    font-size: var(--fs-h5-1024);
+    line-height: var(--lh-h5-1024);
+    letter-spacing: var(--ls-h5-1024);
+  }
+
+  p {
+    font-size: var(--fs-p-1024);
+    line-height: var(--lh-p-1024);
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    font-size: var(--fs-a-768);
+    line-height: var(--lh-a-768);
+  }
+
+  h1 {
+    font-size: var(--fs-h1-768);
+    line-height: var(--lh-h1-768);
+    letter-spacing: var(--ls-h1-768);
+  }
+
+  h2 {
+    font-size: var(--fs-h2-768);
+    line-height: var(--lh-h2-768);
+    letter-spacing: var(--ls-h2-768);
+  }
+
+  h3 {
+    font-size: var(--fs-h3-768);
+    line-height: var(--lh-h3-768);
+    letter-spacing: var(--ls-h3-768);
+  }
+
+  h4 {
+    font-size: var(--fs-h4-768);
+    line-height: var(--lh-h4-768);
+    letter-spacing: var(--ls-h4-768);
+  }
+
+  h5 {
+    font-size: var(--fs-h5-768);
+    line-height: var(--lh-h5-768);
+    letter-spacing: var(--ls-h5-768);
+  }
+
+  p {
+    font-size: var(--fs-p-768);
+    line-height: var(--lh-p-768);
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  a {
+    font-size: var(--fs-a-420);
+    line-height: var(--lh-a-420);
+  }
+
+  h1 {
+    font-size: var(--fs-h1-420);
+    line-height: var(--lh-h1-420);
+    letter-spacing: var(--ls-h1-420);
+  }
+
+  h2 {
+    font-size: var(--fs-h2-420);
+    line-height: var(--lh-h2-420);
+    letter-spacing: var(--ls-h2-420);
+  }
+
+  h3 {
+    font-size: var(--fs-h3-420);
+    line-height: var(--lh-h3-420);
+    letter-spacing: var(--ls-h3-420);
+  }
+
+  h4 {
+    font-size: var(--fs-h4-420);
+    line-height: var(--lh-h4-420);
+    letter-spacing: var(--ls-h4-420);
+  }
+
+  h5 {
+    font-size: var(--fs-h5-420);
+    line-height: var(--lh-h5-420);
+    letter-spacing: var(--ls-h5-420);
+  }
+
+  p {
+    font-size: var(--fs-p-420);
+    line-height: var(--lh-p-420);
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}

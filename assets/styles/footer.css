@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer_logo {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 50px;
+  margin: 80px 30px;
+}
+
+.footer_logo_img {
+  width: 50px;
+  height: 26px;
+}
+
+.footer_logo_text {
+  font-family: var(--ff2);
+  font-size: var(--fs3);
+  font-weight: var(--fw4);
+  line-height: var(--lh5);
+  letter-spacing: var(--ls5);
+  margin-left: 21px;
+  text-transform: uppercase;
+}
+
+.footer_wrap_nav {
+  height: 200px;
+  width: 600px;
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer_nav_ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.footer_nav_li {
+  display: block;
+  width: 250px;
+  font-family: var(--ff2);
+  font-weight: var(--fw2);
+  font-size: var(--fs4);
+  line-height: var(--lh5);
+  letter-spacing: var(--ls2);
+  padding: 15px;
+}
+
+.footer_nav_li:hover a {
+  color: var(--gold);
+}
+
+.footer_wrap_social {
+  transform: translate(220px, 20px);
+}
+
+.footer_social {
+  width: 100%;
+}
+
+.footer_social_ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_social_li {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  transform: translateY(10px);
+  cursor: pointer;
+}
+
+.footer_social_li:hover {
+  border: 1px solid var(--gold);
+}
+
+.footer_social_li:hover a img {
+  filter: invert(51%) sepia(95%) saturate(147%) hue-rotate(356deg)
+    brightness(92%) contrast(82%);
+}
+
+.footer_underline {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.footer_description {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_description p {
+  font-family: var(--ff1);
+  font-size: var(--fs5);
+  font-weight: var(--fw2);
+}

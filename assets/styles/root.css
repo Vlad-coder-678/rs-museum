@@ -1,0 +1,112 @@
+:root {
+  --black: #000;
+  --bg-dark: #030303;
+  --color-dark: #151719;
+  --dark-red: #710707;
+  --white: #fff;
+  --gold: #9d8665;
+
+  --ff-h1: "Roboto", sans-serif;
+  --ff-h2: "Forum", cursive;
+  --ff-h3: "Forum", cursive;
+  --ff-h4: "Forum", cursive;
+  --ff-h5: "Roboto", sans-serif;
+  --ff-a: "Roboto", sans-serif;
+  --ff-p: "Roboto", sans-serif;
+
+  --fst1: normal;
+
+  --fw-h1: 300;
+  --fw-h2: 400;
+  --fw-h3: 400;
+  --fw-h4: 400;
+  --fw-h5: 700;
+  --fw-a: 200;
+  --fw-p: 300;
+
+  --fs-h1-1920: 28px;
+  --fs-h2-1920: 80px;
+  --fs-h3-1920: 80px;
+  --fs-h4-1920: 32px;
+  --fs-h5-1920: 28px;
+  --fs-a-1920: 22px;
+  --fs-p-1920: 22px;
+
+  --lh-h1-1920: 33px;
+  --lh-h2-1920: 90px;
+  --lh-h3-1920: 90px;
+  --lh-h4-1920: 35.5px;
+  --lh-h5-1920: 33px;
+  --lh-a-1920: 26px;
+  --lh-p-1920: 38.5px;
+
+  --ls-h1-1920: 2px;
+  --ls-h2-1920: 5px;
+  --ls-h3-1920: 5px;
+  --ls-h4-1920: 5px;
+  --ls-h5-1920: 5px;
+  --ls-a-1920: 2px;
+
+  --fs-h1-1024: 24px;
+  --fs-h2-1024: 50px;
+  --fs-h3-1024: 50px;
+  --fs-h4-1024: 28px;
+  --fs-h5-1024: 28px;
+  --fs-a-1024: 20px;
+  --fs-p-1024: 20px;
+
+  --lh-h1-1024: 28px;
+  --lh-h2-1024: 90px;
+  --lh-h3-1024: 75px;
+  --lh-h4-1024: 31px;
+  --lh-h5-1024: 33px;
+  --lh-a-1024: 24px;
+  --lh-p-1024: 38.5px;
+
+  --ls-h1-1024: 2px;
+  --ls-h2-1024: 5px;
+  --ls-h3-1024: 5px;
+  --ls-h4-1024: 3px;
+  --ls-a-1024: 2px;
+
+  --fs-h1-768: 20px;
+  --fs-h2-768: 40px;
+  --fs-h3-768: 40px;
+  --fs-h4-768: 22px;
+  --fs-h5-768: 32px;
+  --fs-a-768: 20px;
+
+  --lh-h1-768: 24px;
+  --lh-h2-768: 60px;
+  --lh-h3-768: 60px;
+  --lh-h4-768: 24.5px;
+  --lh-h5-768: 33px;
+  --lh-a-768: 23.5px;
+
+  --ls-h1-768: 2px;
+  --ls-h2-768: 5px;
+  --ls-h3-768: 5px;
+  --ls-h4-768: 3px;
+  --ls-h5-768: 5px;
+  --ls-a-768: 2px;
+
+  --fs-h1-420: 16px;
+  --fs-h2-420: 28px;
+  --fs-h3-420: 28px;
+  --fs-h4-420: 18px;
+  --fs-h5-420: 16px;
+  --fs-a-420: 20px;
+
+  --lh-h1-420: 18.75px;
+  --lh-h2-420: 40px;
+  --lh-h3-420: 40px;
+  --lh-h4-420: 20px;
+  --lh-h5-420: 18.75px;
+  --lh-a-420: 23.5px;
+
+  --ls-h1-420: 2px;
+  --ls-h2-420: 5px;
+  --ls-h3-420: 5px;
+  --ls-h4-420: 5px;
+  --ls-a-420: 2px;
+}

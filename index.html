@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <title>museum</title>
   </head>
   <body>
@@ -35,6 +35,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="section_welcome section_dark">
         <div class="container">
@@ -60,24 +61,16 @@
           </div>
           <div class="section_welcome_slider_control_arrows">
             <button class="slider_control_arrow_prev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="white" d="M24 11.871l-5-4.871v3h-19v4h19v3z" />
-              </svg>
+              <img
+                src="./assets/images/svg/welcome_slider_arrow_left.svg"
+                alt="button arrow left"
+              />
             </button>
             <button class="slider_control_arrow_next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="white" d="M24 11.871l-5-4.871v3h-19v4h19v3z" />
-              </svg>
+              <img
+                src="./assets/images/svg/welcome_slider_arrow_right.svg"
+                alt="button arrow right"
+              />
             </button>
           </div>
         </div>
@@ -97,7 +90,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Royal-Palace.jpg"
+                    src="./assets/pictures/visiting-Royal-Palace.jpg"
                     alt="Royal Palace"
                     class="visiting_card_img"
                   />
@@ -117,7 +110,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Denon-Wing.jpg"
+                    src="./assets/pictures/visiting-Denon-Wing.jpg"
                     alt="Denon Wing"
                     class="visiting_card_img"
                   />
@@ -137,7 +130,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Colonnade-Perrault.jpg"
+                    src="./assets/pictures/visiting-Colonnade-Perrault.jpg"
                     alt="Colonnade Perrault"
                     class="visiting_card_img"
                   />
@@ -157,7 +150,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Greek-Hall.jpg"
+                    src="./assets/pictures/visiting-Greek-Hall.jpg"
                     alt="Greek Hall"
                     class="visiting_card_img"
                   />
@@ -177,7 +170,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Mona-Lisa.jpg"
+                    src="./assets/pictures/visiting-Mona-Lisa.jpg"
                     alt="Mona Lisa"
                     class="visiting_card_img"
                   />
@@ -197,7 +190,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/img/visiting-Nigth-Palace.jpg"
+                    src="./assets/pictures/visiting-Nigth-Palace.jpg"
                     alt="Nigth Palace"
                     class="visiting_card_img"
                   />
@@ -240,12 +233,12 @@
           <div class="explore_content_right">
             <img
               class="explore_content_first_img"
-              src="./assets/img/explore-new.png"
+              src="./assets/pictures/explore-new.png"
               alt="new"
             />
             <img
               class="explore_content_second_img"
-              src="./assets/img/explore-old.png"
+              src="./assets/pictures/explore-old.png"
               alt="old"
             />
           </div>
@@ -273,7 +266,10 @@
                 class="main_interface_button_play big_play unSelected"
                 id="big_play"
               >
-                <img src="./assets/img/video-main-play.png" alt="button-play" />
+                <img
+                  src="./assets/images/svg/controls_play.svg"
+                  alt="button play main"
+                />
               </div>
             </div>
 
@@ -281,30 +277,17 @@
               <div class="controls_item">
                 <!-- class="control_button a_button control unSelected" -->
                 <button class="control_button play unSelected" id="play">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="transform: scale(1.5)"
-                  >
-                    <path fill="#ddd" d="M3 22v-20l18 10-18 10z" />
-                  </svg>
+                  <img
+                    src="./assets/images/svg/controls_play.svg"
+                    alt="button play"
+                  />
                 </button>
                 <!-- class="control_button a_button control unSelected" -->
                 <button class="control_button pause selected" id="pause">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="transform: scale(1.5)"
-                  >
-                    <path
-                      fill="#ddd"
-                      d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"
-                    />
-                  </svg>
+                  <img
+                    src="./assets/images/svg/controls_pause.svg"
+                    alt="button pause"
+                  />
                 </button>
               </div>
 
@@ -319,34 +302,20 @@
               <div class="controls_item">
                 <!-- class="videoplayer_control_button a_button control unSelected" -->
                 <button class="control_button mute unSelected" id="mute">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="#ddd"
-                      d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"
-                    />
-                  </svg>
+                  <img
+                    src="./assets/images/svg/controls_mute.svg"
+                    alt="button mute"
+                  />
                 </button>
                 <input type="range" id="volume_bar" class="volume_bar" />
                 <button
                   class="control_button fullScreen unSelected"
                   id="fullScreen"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="30"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="#ddd"
-                      d="M24 9h-4v-5h-5v-4h9v9zm-9 15v-4h5v-5h4v9h-9zm-15-9h4v5h5v4h-9v-9zm9-15v4h-5v5h-4v-9h9z"
-                    />
-                  </svg>
+                  <img
+                    src="./assets/images/svg/controls_full_screen.svg"
+                    alt="button full screen"
+                  />
                 </button>
               </div>
             </div>
@@ -433,14 +402,10 @@
                 <label>Basic 18+</label>
                 <div>
                   <button class="tickets_amount_button">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="#fff" d="M0 10h24v4h-24z" />
-                    </svg>
+                    <img
+                      src="./assets/images/svg/tickets_minus.svg"
+                      alt="button decrement amount"
+                    />
                   </button>
                   <input
                     class="tickets_amount_input"
@@ -451,30 +416,19 @@
                     readonly
                   />
                   <button class="tickets_amount_button">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="#fff"
-                        d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"
-                      />
-                    </svg>
+                    <img
+                      src="./assets/images/svg/tickets_plus.svg"
+                      alt="button increment amount"
+                    />
                   </button>
                 </div>
                 <label>Senior 65+</label>
                 <div>
                   <button class="tickets_amount_button">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="#fff" d="M0 10h24v4h-24z" />
-                    </svg>
+                    <img
+                      src="./assets/images/svg/tickets_minus.svg"
+                      alt="button decrement amount"
+                    />
                   </button>
                   <input
                     class="tickets_amount_input"
@@ -485,17 +439,10 @@
                     readonly
                   />
                   <button class="tickets_amount_button">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="#fff"
-                        d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"
-                      />
-                    </svg>
+                    <img
+                      src="./assets/images/svg/tickets_plus.svg"
+                      alt="button increment amount"
+                    />
                   </button>
                 </div>
                 <h4>Total 220</h4>
@@ -537,7 +484,11 @@
     <footer class="footer section_dark">
       <div class="container">
         <div class="footer_logo">
-          <img class="footer_logo_img" src="./assets/svg/logo.svg" alt="logo" />
+          <img
+            class="footer_logo_img"
+            src="./assets/images/svg/logo.svg"
+            alt="logo"
+          />
           <span class="footer_logo_text">Louvre</span>
         </div>
 
@@ -560,35 +511,35 @@
               <li class="footer_social_li">
                 <a href="https://www.youtube.com/user/louvre"
                   ><img
-                    src="./assets/svg/footer-social-youtube.svg"
+                    src="./assets/images/svg/footer-social-youtube.svg"
                     alt="social"
                 /></a>
               </li>
               <li class="footer_social_li">
                 <a href="https://www.instagram.com/museelouvre/"
                   ><img
-                    src="./assets/svg/footer-social-instagramm.svg"
+                    src="./assets/images/svg/footer-social-instagramm.svg"
                     alt="social"
                 /></a>
               </li>
               <li class="footer_social_li">
                 <a href="https://www.facebook.com/museedulouvre"
                   ><img
-                    src="./assets/svg/footer-social-facebook.svg"
+                    src="./assets/images/svg/footer-social-facebook.svg"
                     alt="social"
                 /></a>
               </li>
               <li class="footer_social_li">
                 <a href="http://twitter.com/museelouvre"
                   ><img
-                    src="./assets/svg/footer-social-twitter.svg"
+                    src="./assets/images/svg/footer-social-twitter.svg"
                     alt="social"
                 /></a>
               </li>
               <li class="footer_social_li">
                 <a href="https://www.pinterest.fr/museedulouvre/"
                   ><img
-                    src="./assets/svg/footer-social-pinterest.svg"
+                    src="./assets/images/svg/footer-social-pinterest.svg"
                     alt="social"
                 /></a>
               </li>
