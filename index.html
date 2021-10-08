@@ -17,21 +17,46 @@
 
     <header class="header section_dark">
       <div class="container">
-        <div class="header_logo">
-          <img class="header_logo_img" src="./assets/svg/logo.svg" alt="logo" />
-          <span class="header_logo_text">Louvre</span>
-        </div>
-        <div class="header_wrap_nav">
-          <nav class="header_nav">
-            <ul class="header_nav_ul">
-              <li class="header_nav_li"><a href="#visiting">Visiting</a></li>
-              <li class="header_nav_li"><a href="#explore">Explore</a></li>
-              <li class="header_nav_li"><a href="#video">Video</a></li>
-              <li class="header_nav_li"><a href="#gallery">Gallery</a></li>
-              <li class="header_nav_li"><a href="#tickets">Tickets</a></li>
-              <li class="header_nav_li"><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
+        <div class="wrapper">
+          <div class="header_logo">
+            <div class="header_logo_wrapper_img">
+              <img src="./assets/images/svg/logo.svg" alt="logo" />
+            </div>
+            <div class="header_logo_wrapper_text">
+              <span>Louvre</span>
+            </div>
+          </div>
+          <div class="header_nav_wrapper">
+            <nav class="header_nav">
+              <ul class="header_nav_ul">
+                <li class="header_nav_li"><a href="#visiting">Visiting</a></li>
+                <li class="header_nav_li"><a href="#explore">Explore</a></li>
+                <li class="header_nav_li"><a href="#video">Video</a></li>
+                <li class="header_nav_li"><a href="#gallery">Gallery</a></li>
+                <li class="header_nav_li"><a href="#tickets">Tickets</a></li>
+                <li class="header_nav_li"><a href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_burger_menu_wrapper">
+            <div class="header_burger_button_wrapper">
+              <button id="menu_open" class="header_burger_button_open visible">
+                <img
+                  src="./assets/images/svg/burger_menu.svg"
+                  alt="burger menu open"
+                />
+              </button>
+              <button
+                id="menu_close"
+                class="header_burger_button_close unvisible"
+              >
+                <img
+                  src="./assets/images/svg/close.svg"
+                  alt="burger menu close"
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -39,39 +64,79 @@
     <main>
       <section class="section_welcome section_dark">
         <div class="container">
-          <h2 class="dark_section_title">Welcome</h2>
-          <h2 class="dark_section_title">to the Louvre</h2>
-          <h1 class="h1">from the castle to the museum</h1>
-          <a
-            class="section_welcome_button"
-            href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
-            >Discover the Louvre</a
-          >
-        </div>
-        <div class="section_welcome_slider_control">
-          <div class="section_welcome_slider_control_str">
-            <span>01</span> <span> | </span> <span>05</span>
-          </div>
-          <div class="section_welcome_slider_control_squere">
-            <button class="slider_control_squere"></button>
-            <button class="slider_control_squere"></button>
-            <button class="slider_control_squere"></button>
-            <button class="slider_control_squere"></button>
-            <button class="slider_control_squere"></button>
-          </div>
-          <div class="section_welcome_slider_control_arrows">
-            <button class="slider_control_arrow_prev">
-              <img
-                src="./assets/images/svg/welcome_slider_arrow_left.svg"
-                alt="button arrow left"
-              />
-            </button>
-            <button class="slider_control_arrow_next">
-              <img
-                src="./assets/images/svg/welcome_slider_arrow_right.svg"
-                alt="button arrow right"
-              />
-            </button>
+          <div class="welcome_wrapper">
+            <div class="welcome_content_left">
+              <div
+                id="welcome_title"
+                class="welcome_content_left_title visible"
+              >
+                <h2 class="dark_section_title">Welcome</h2>
+                <h2 class="dark_section_title">to the Louvre</h2>
+                <h1 class="h1">from the castle to the museum</h1>
+                <a
+                  class="section_welcome_button"
+                  href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+                  >Discover the Louvre</a
+                >
+              </div>
+
+              <div
+                id="welcome_menu"
+                class="welcome_content_left_menu unvisible"
+              >
+                <nav class="header_menu_nav">
+                  <ul class="header_menu_nav_ul">
+                    <li class="header_menu_nav_li">
+                      <a href="#visiting">Visiting</a>
+                    </li>
+                    <li class="header_menu_nav_li">
+                      <a href="#explore">Explore</a>
+                    </li>
+                    <li class="header_menu_nav_li">
+                      <a href="#video">Video</a>
+                    </li>
+                    <li class="header_menu_nav_li">
+                      <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="header_menu_nav_li">
+                      <a href="#tickets">Tickets</a>
+                    </li>
+                    <li class="header_menu_nav_li">
+                      <a href="#contacts">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="welcome_content_right_slider">
+              <div class="welcome_slider_control">
+                <div class="welcome_slider_control_str">
+                  <span>01</span> <span> | </span> <span>05</span>
+                </div>
+                <div class="welcome_slider_control_squere">
+                  <button class="slider_control_squere"></button>
+                  <button class="slider_control_squere"></button>
+                  <button class="slider_control_squere"></button>
+                  <button class="slider_control_squere"></button>
+                  <button class="slider_control_squere"></button>
+                </div>
+                <div class="welcome_slider_control_arrows">
+                  <button class="slider_control_arrow_prev">
+                    <img
+                      src="./assets/images/svg/welcome_slider_arrow_left.svg"
+                      alt="button arrow left"
+                    />
+                  </button>
+                  <button class="slider_control_arrow_next">
+                    <img
+                      src="./assets/images/svg/welcome_slider_arrow_right.svg"
+                      alt="button arrow right"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -558,6 +623,6 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./assets/script/header_and_welcome.js"></script>
   </body>
 </html>

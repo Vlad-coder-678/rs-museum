@@ -7,6 +7,7 @@ a {
   color: var(--white);
   font-size: var(--fs-a-1920);
   line-height: var(--lh-a-1920);
+  letter-spacing: var(--ls-a-1920);
 }
 
 /* text on welcome section 'from the castle to the museum' */
@@ -92,10 +93,18 @@ p {
 
 .container {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1440px;
 }
 
-@media screen and (max-width: 1024px) {
+.visible {
+  display: block;
+}
+
+.unvisible {
+  display: none;
+}
+
+@media screen and (max-width: 1920px) {
   a {
     font-size: var(--fs-a-1024);
     line-height: var(--lh-a-1024);
@@ -137,7 +146,7 @@ p {
   }
 
   .container {
-    max-width: 1600px;
+    max-width: 984px;
   }
 }
 
@@ -183,7 +192,7 @@ p {
   }
 
   .container {
-    max-width: 1600px;
+    max-width: 728px;
   }
 }
 
@@ -229,6 +238,6 @@ p {
   }
 
   .container {
-    max-width: 1600px;
+    max-width: 380px;
   }
 }
