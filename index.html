@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="assets/svg/favicon.svg" />
+    <link rel="icon" href="assets/images/svg/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,6 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>museum</title>
   </head>
   <body>
@@ -62,19 +69,81 @@
     </header>
 
     <main>
+      <!-- section welcome -->
+
       <section class="section_welcome section_dark">
         <div class="container">
           <div class="welcome_wrapper">
+            <div class="welcome_content_right">
+              <div class="welcome_swiper_wrapper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide welcome_swiper_slide">
+                    <img
+                      src="./assets/pictures/welcome/1.jpg"
+                      alt="welcome slide"
+                    />
+                  </li>
+                  <li class="swiper-slide welcome_swiper_slide">
+                    <img
+                      src="./assets/pictures/welcome/2.jpg"
+                      alt="welcome slide"
+                    />
+                  </li>
+                  <li class="swiper-slide welcome_swiper_slide">
+                    <img
+                      src="./assets/pictures/welcome/3.jpg"
+                      alt="welcome slide"
+                    />
+                  </li>
+                  <li class="swiper-slide welcome_swiper_slide">
+                    <img
+                      src="./assets/pictures/welcome/4.jpg"
+                      alt="welcome slide"
+                    />
+                  </li>
+                  <li class="swiper-slide welcome_swiper_slide">
+                    <img
+                      src="./assets/pictures/welcome/5.jpg"
+                      alt="welcome slide"
+                    />
+                  </li>
+                </ul>
+
+                <div class="welcome_swiper_controls">
+                  <div class="welcome_swiper_control_fraction">
+                    <div class="welcome_swiper_current">01</div>
+                    <div class="welcome_swiper_separator">|</div>
+                    <div class="welcome_swiper_total">05</div>
+                  </div>
+                  <div class="welcome_swiper_pagination"></div>
+                  <div class="welcome_swiper_control_arrows">
+                    <button class="welcome_swiper_button_prev">
+                      <img
+                        src="./assets/images/svg/welcome_slider_arrow_left.svg"
+                        alt="button arrow left"
+                      />
+                    </button>
+                    <button class="welcome_swiper_button_next">
+                      <img
+                        src="./assets/images/svg/welcome_slider_arrow_right.svg"
+                        alt="button arrow right"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="welcome_content_left">
               <div
                 id="welcome_title"
                 class="welcome_content_left_title visible"
               >
-                <h2 class="dark_section_title">Welcome</h2>
-                <h2 class="dark_section_title">to the Louvre</h2>
-                <h1 class="h1">from the castle to the museum</h1>
+                <h2 class="welcome_title">Welcome</h2>
+                <h2 class="welcome_title">to the Louvre</h2>
+                <h1 class="welcome_h1">from the castle to the museum</h1>
                 <a
-                  class="section_welcome_button"
+                  class="welcome_button"
                   href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
                   >Discover the Louvre</a
                 >
@@ -108,38 +177,23 @@
                 </nav>
               </div>
             </div>
-
-            <div class="welcome_content_right_slider">
-              <div class="welcome_slider_control">
-                <div class="welcome_slider_control_str">
-                  <span>01</span> <span> | </span> <span>05</span>
-                </div>
-                <div class="welcome_slider_control_squere">
-                  <button class="slider_control_squere"></button>
-                  <button class="slider_control_squere"></button>
-                  <button class="slider_control_squere"></button>
-                  <button class="slider_control_squere"></button>
-                  <button class="slider_control_squere"></button>
-                </div>
-                <div class="welcome_slider_control_arrows">
-                  <button class="slider_control_arrow_prev">
-                    <img
-                      src="./assets/images/svg/welcome_slider_arrow_left.svg"
-                      alt="button arrow left"
-                    />
-                  </button>
-                  <button class="slider_control_arrow_next">
-                    <img
-                      src="./assets/images/svg/welcome_slider_arrow_right.svg"
-                      alt="button arrow right"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+      <script type="module">
+        import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+
+        var swiper = new Swiper(".welcome_swiper_wrapper", {
+          loop: true,
+          pagination: ".welcome_swiper_pagination",
+          navigation: {
+            nextEl: ".welcome_swiper_button_next",
+            prevEl: ".welcome_swiper_button_prev",
+          },
+          slidesPerView: "none",
+          paginationClickable: true,
+        });
+      </script>
 
       <!-- section visiting -->
 
@@ -155,7 +209,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Royal-Palace.jpg"
+                    src="./assets/pictures/visiting/Royal-Palace.jpg"
                     alt="Royal Palace"
                     class="visiting_card_img"
                   />
@@ -175,7 +229,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Denon-Wing.jpg"
+                    src="./assets/pictures/visiting/Denon-Wing.jpg"
                     alt="Denon Wing"
                     class="visiting_card_img"
                   />
@@ -195,7 +249,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Colonnade-Perrault.jpg"
+                    src="./assets/pictures/visiting/Colonnade-Perrault.jpg"
                     alt="Colonnade Perrault"
                     class="visiting_card_img"
                   />
@@ -215,7 +269,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Greek-Hall.jpg"
+                    src="./assets/pictures/visiting/Greek-Hall.jpg"
                     alt="Greek Hall"
                     class="visiting_card_img"
                   />
@@ -235,7 +289,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Mona-Lisa.jpg"
+                    src="./assets/pictures/visiting/Mona-Lisa.jpg"
                     alt="Mona Lisa"
                     class="visiting_card_img"
                   />
@@ -255,7 +309,7 @@
               <div class="visiting_card_content">
                 <div class="visiting_card_wrap_img">
                   <img
-                    src="./assets/pictures/visiting-Nigth-Palace.jpg"
+                    src="./assets/pictures/visiting/Nigth-Palace.jpg"
                     alt="Nigth Palace"
                     class="visiting_card_img"
                   />
@@ -298,12 +352,12 @@
           <div class="explore_content_right">
             <img
               class="explore_content_first_img"
-              src="./assets/pictures/explore-new.png"
+              src="./assets/pictures/explore/new.png"
               alt="new"
             />
             <img
               class="explore_content_second_img"
-              src="./assets/pictures/explore-old.png"
+              src="./assets/pictures/explore/old.png"
               alt="old"
             />
           </div>
@@ -441,7 +495,7 @@
           <div class="section_tickets_title_underline"></div>
           <div class="tickets_content">
             <div class="tickets_content_left">
-              <img src="./assets/img/ticket-bg.png" alt="tickets" />
+              <img src="./assets/pictures/tickets/1.png" alt="tickets" />
             </div>
             <div class="tickets_content_right">
               <div class="tickets_right_start">
@@ -539,7 +593,7 @@
               </div>
             </div>
             <div class="section_contacts_content_right">
-              <img src="./assets/img/contacts-bg.png" alt="map adress" />
+              <img src="./assets/images/png/contacts-bg.png" alt="map adress" />
             </div>
           </div>
         </div>
