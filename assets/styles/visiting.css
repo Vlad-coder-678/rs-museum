@@ -1,3 +1,7 @@
+.section_visiting {
+  padding-bottom: 40px;
+}
+
 .section_visiting h2 {
   padding-top: 78px;
   color: var(--gold);
