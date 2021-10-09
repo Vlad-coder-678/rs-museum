@@ -115,7 +115,7 @@
                     <div class="welcome_swiper_separator">|</div>
                     <div class="welcome_swiper_total">05</div>
                   </div>
-                  <div class="welcome_swiper_pagination"></div>
+                  <div id="swiper-pagination" class="swiper-pagination"></div>
                   <div class="welcome_swiper_control_arrows">
                     <button class="welcome_swiper_button_prev">
                       <img
@@ -153,25 +153,35 @@
                 id="welcome_menu"
                 class="welcome_content_left_menu unvisible"
               >
-                <nav class="header_menu_nav">
-                  <ul class="header_menu_nav_ul">
-                    <li class="header_menu_nav_li">
-                      <a href="#visiting">Visiting</a>
+                <nav class="welcome_menu_nav">
+                  <ul class="welcome_menu_nav_ul">
+                    <li class="welcome_menu_nav_li">
+                      <a href="#visiting"
+                        ><span>Visiting</span><span>&gt;</span></a
+                      >
                     </li>
-                    <li class="header_menu_nav_li">
-                      <a href="#explore">Explore</a>
+                    <li class="welcome_menu_nav_li">
+                      <a href="#explore"
+                        ><span>Explore</span><span>&gt;</span></a
+                      >
                     </li>
-                    <li class="header_menu_nav_li">
-                      <a href="#video">Video</a>
+                    <li class="welcome_menu_nav_li">
+                      <a href="#video"><span>Video</span><span>&gt;</span></a>
                     </li>
-                    <li class="header_menu_nav_li">
-                      <a href="#gallery">Gallery</a>
+                    <li class="welcome_menu_nav_li">
+                      <a href="#gallery"
+                        ><span>Gallery</span><span>&gt;</span></a
+                      >
                     </li>
-                    <li class="header_menu_nav_li">
-                      <a href="#tickets">Tickets</a>
+                    <li class="welcome_menu_nav_li">
+                      <a href="#tickets"
+                        ><span>Tickets</span><span>&gt;</span></a
+                      >
                     </li>
-                    <li class="header_menu_nav_li">
-                      <a href="#contacts">Contacts</a>
+                    <li class="welcome_menu_nav_li">
+                      <a href="#contacts"
+                        ><span>Contacts</span><span>&gt;</span></a
+                      >
                     </li>
                   </ul>
                 </nav>
@@ -180,18 +190,27 @@
           </div>
         </div>
       </section>
+
+      <!-- script for swiper -->
+
       <script type="module">
         import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 
         var swiper = new Swiper(".welcome_swiper_wrapper", {
           loop: true,
-          pagination: ".welcome_swiper_pagination",
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+          },
           navigation: {
             nextEl: ".welcome_swiper_button_next",
             prevEl: ".welcome_swiper_button_prev",
           },
-          slidesPerView: "none",
-          paginationClickable: true,
+          // autoplay: {
+          //   delay: 5000,
+          // },
+          slidesPerView: "auto",
         });
       </script>
 

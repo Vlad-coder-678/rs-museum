@@ -51,14 +51,22 @@
 .welcome_swiper_wrapper {
   width: 1000px;
   height: 810px;
+  overflow: hidden;
 }
 
-.welcome_swiper {
+ul.swiper-wrapper {
   height: 750px;
+  z-index: 0;
 }
 
 .welcome_swiper_slide {
   position: relative;
+}
+
+.welcome_swiper_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .welcome_swiper_slide:after {
@@ -93,123 +101,129 @@
   font-family: var(--ff-h1);
   font-size: 22px;
   font-weight: 400px;
+  padding-left: 50px;
 }
 
 .welcome_swiper_control_fraction div {
   margin: 0 5px;
 }
 
-.swiper_pagination {
-  border: 2px solid red;
+#swiper-pagination {
+  position: static;
+  width: auto;
+  margin: 0;
+}
+
+#swiper-pagination > span.swiper-pagination-bullet-active {
+  background: var(--gold);
+}
+
+#swiper-pagination > span.swiper-pagination-bullet {
+  background: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  margin: 0 12px;
+  cursor: pointer;
 }
 
 .welcome_slider_control_arrows {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.slider_control_arrow_prev,
-.slider_control_arrow_next {
+.welcome_swiper_button_prev,
+.welcome_swiper_button_next {
   border: none;
   background-color: transparent;
-  transform: scale(1.4);
+  transform: scaleX(1.5);
   margin: 0 15px;
-  padding: 0;
 }
 
-.slider_control_arrow_prev {
-  transform: rotate(180deg) scale(1.4) translateY(2px);
+.welcome_swiper_button_prev {
+  transform: rotate(180deg) scaleX(1.5) translateY(2px);
 }
 
-/* spiwer */
+.welcome_swiper_button_next {
+  padding-right: 25px;
+}
 
-.swiper-controls {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.welcome_menu_nav_ul {
   display: flex;
-  width: 600px;
-  height: 120px;
-  z-index: 1;
-  background: #030303;
-}
-
-.swiper-fraction {
-  position: relative;
-  left: 74px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.swiper-fraction-separator {
-  margin: 0 10px;
-}
-
-.swiper-buttons {
-  position: absolute;
-  right: 24px;
-  top: 46%;
-  width: 131px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  left: 0;
+  flex-direction: column;
   justify-content: flex-start;
-  width: 30px;
-  height: 8px;
-  margin-top: 0;
+  align-items: flex-start;
+  padding: 20px 35px;
 }
 
-.swiper-button-next {
-  left: 50px;
+.welcome_menu_nav_li {
+  width: 120px;
+  margin: 12px 0;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-  font-family: none;
-  width: 100%;
-  height: 100%;
+.welcome_menu_nav_li a {
+  display: flex;
+  justify-content: space-between;
 }
 
-.swiper-button-next::after {
-  background: url(assets/img/welcome-slider/btnNext.svg) no-repeat;
-}
+@media screen and (max-width: 1920px) {
+  .welcome_wrapper {
+    height: 585px;
+  }
 
-.swiper-button-prev::after {
-  background: url(assets/img/welcome-slider/btnPrev.svg) no-repeat;
-}
+  .welcome_swiper_wrapper {
+    width: 700px;
+    height: 525px;
+  }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  filter: invert(53%) sepia(12%) saturate(897%) hue-rotate(356deg)
-    brightness(99%) contrast(90%);
-}
+  ul.swiper-wrapper {
+    height: 525px;
+  }
 
-.swiper-pagination {
-  top: 43%;
-  left: 193px;
-  width: auto;
-}
+  .welcome_title:first-child {
+    margin-top: 50px;
+  }
 
-.swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  border-radius: 0;
-  background-color: #fff;
-  opacity: 1;
-  margin: 0 12.5px;
-}
+  .welcome_h1 {
+    margin-left: 3px;
+  }
 
-.swiper-pagination-bullet-active {
-  background-color: #d2b183;
-}
+  .welcome_button {
+    display: block;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-a-1024);
+    line-height: var(--lh-a-1024);
+    padding: 20px 0;
+    margin-top: 50px;
+  }
 
-.swiper-pagination-bullet:hover {
-  background-color: #9d8665;
+  .welcome_swiper_controls {
+    bottom: -60px;
+    width: 700px;
+    height: 120px;
+    padding-left: 150px;
+  }
+
+  #swiper-pagination > span.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 12px;
+  }
+
+  .welcome_swiper_button_prev,
+  .welcome_swiper_button_next {
+    transform: scaleX(1.2);
+  }
+
+  .welcome_swiper_button_prev {
+    transform: rotate(180deg) scaleX(1.2) translateY(2px);
+  }
+
+  .welcome_swiper_button_next {
+    padding-right: 35px;
+  }
 }
