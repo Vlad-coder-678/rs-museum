@@ -1,5 +1,3 @@
-// import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
-
 const menu_open = document.getElementById("menu_open");
 const menu_close = document.getElementById("menu_close");
 const welcome_title = document.getElementById("welcome_title");
@@ -35,15 +33,3 @@ function closeMenu() {
 
 menu_open.addEventListener("click", openMenu);
 menu_close.addEventListener("click", closeMenu);
-
-// var swiper = new Swiper(".welcome_swiper_wrapper", {
-//   loop: true,
-//   pagination: ".welcome_swiper_pagination",
-//   navigation: {
-//     prevEl: ".welcome_swiper_button_prev",
-//     nextEl: ".welcome_swiper_button_next",
-//   },
-//   slidesPerView: "auto",
-//   paginationClickable: true,
-//   spaceBetween: 0,
-// });

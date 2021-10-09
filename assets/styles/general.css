@@ -54,9 +54,11 @@ h4 {
   font-family: var(--ff-h4);
   font-weight: var(--fw-h4);
   font-style: var(--fst1);
-  color: var(--white);
+  color: var(--black);
   font-size: var(--fs-h4-1920);
   line-height: var(--lh-h4-1920);
+  letter-spacing: var(--ls-h4-1920);
+  text-transform: uppercase;
 }
 
 /* Title on tickets section and contacts section */
