@@ -207,9 +207,9 @@
             nextEl: ".welcome_swiper_button_next",
             prevEl: ".welcome_swiper_button_prev",
           },
-          // autoplay: {
-          //   delay: 5000,
-          // },
+          autoplay: {
+            delay: 5000,
+          },
           slidesPerView: "auto",
         });
       </script>
@@ -385,18 +385,18 @@
 
       <section class="section_video section_light">
         <div class="container">
-          <div class="wrapper">
-            <div class="section_video_content_bottom">
-              <h2 class="section_video_title">Video Journey</h2>
-              <p class="section_video_text">
+          <div class="video_wrapper">
+            <div class="video_content_top">
+              <h2 class="video_title">Video Journey</h2>
+              <p class="video_text">
                 Enter and visit one of the most famous museums in the world and
                 enjoy masterpieces such as Mona Lisa or Hammurabi's Code
               </p>
             </div>
             
-            <div class="wrap_videoPlayer" id="videoDiv">
-              <div class="main_interface">
-                <div class="video_wrapper">
+            <div class="videoplayer_outter" id="videoDiv">
+              <div class="videoplayer_main_interface">
+                <div class="videoplayer_wrapper">
                   <video id="video" poster="./assets/video/poster.png"></video>
                 </div>
                 <div
@@ -410,7 +410,7 @@
                 </div>
               </div>
   
-              <div class="section_video_controls" id="controls">
+              <div class="videoplayer_controls" id="controls">
                 <div class="controls_item">
                   <!-- class="control_button a_button control unSelected" -->
                   <button class="control_button play unSelected" id="play">
@@ -458,50 +458,94 @@
               </div>
             </div>
   
-            <div id="videoSelection" class="videoSelection">
-              <div class="video-youtube-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/Ejer80zJBDI"
-                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-youtube-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
-                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-youtube-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/MufP60vnLnU"
-                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
+            <div class="videoplayer_playlist_container">
+              <ul id="videoplayer_playlist" class="videoplayer_playlist">
+                <li class="video-youtube-wrap">
+                  <iframe
+                    src="https://www.youtube.com/embed/Ejer80zJBDI"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="video-youtube-wrap">
+                  <iframe
+                    src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="video-youtube-wrap">
+                  <iframe
+                    src="https://www.youtube.com/embed/MufP60vnLnU"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="video-youtube-wrap">
+                  <iframe
+                    src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+                <li class="video-youtube-wrap">
+                  <iframe
+                    src="https://www.youtube.com/embed/MufP60vnLnU"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+              </ul>
   
-            <div class="section_videoPlayer_slider_control">
-              <div class="section_videoPlayer_slider_octagon">
-                <button class="slider_control_octagon"></button>
-                <button class="slider_control_octagon"></button>
-                <button class="slider_control_octagon"></button>
-                <button class="slider_control_octagon"></button>
-                <button class="slider_control_octagon"></button>
+              <div class="videoplayer_swiper_pagination"></div>
+              <div class="videoplayer_swiper_control_arrows">
+                <button class="videoplayer_swiper_button_prev">
+                  <img
+                    src="./assets/images/svg/welcome_slider_arrow_left.svg"
+                    alt="button arrow left"
+                  />
+                </button>
+                <button class="videoplayer_swiper_button_next">
+                  <img
+                    src="./assets/images/svg/welcome_slider_arrow_right.svg"
+                    alt="button arrow right"
+                  />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- script for swiper on section welcome -->
+
+      <script type="module">
+        import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+
+        var swiper_video = new Swiper(".videoplayer_playlist_container", {
+          loop: true,
+          pagination: {
+            el: ".videoplayer_swiper_pagination",
+            type: "bullets",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".videoplayer_swiper_button_next",
+            prevEl: ".videoplayer_swiper_button_prev",
+          },
+          slidesPerView: "auto",
+        });
+      </script>
+            
       <!--section gallery-->
 
       <section class="section_gallery section_dark" id="gallery">
-        <div class="section_gallery container">
-          <h2 class="section_gallery-title">Art gallery</h2>
-          <div class="section_gallery-outer">
-            <div class="section_gallery-inner" id="gallery_inner"></div>
+        <div class="container">
+          <div class="gallery_wrapper">
+            <h2 class="gallery_title">Art gallery</h2>
+            <div class="gallery_outer">
+              <div class="gallery_inner" id="gallery_inner"></div>
+            </div>
           </div>
         </div>
       </section>
