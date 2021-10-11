@@ -385,109 +385,111 @@
 
       <section class="section_video section_light">
         <div class="container">
-          <div class="section_video_content_bottom">
-            <h2 class="section_video_title">Video Journey</h2>
-            <p class="section_video_text">
-              Enter and visit one of the most famous museums in the world and
-              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
-            </p>
-          </div>
-
-          <div class="wrap_videoPlayer" id="videoDiv">
-            <div class="main_interface">
-              <div class="video_wrapper">
-                <video id="video" poster="./assets/video/poster.png"></video>
-              </div>
-              <div
-                class="main_interface_button_play big_play unSelected"
-                id="big_play"
-              >
-                <img
-                  src="./assets/images/svg/controls_play.svg"
-                  alt="button play main"
-                />
-              </div>
+          <div class="wrapper">
+            <div class="section_video_content_bottom">
+              <h2 class="section_video_title">Video Journey</h2>
+              <p class="section_video_text">
+                Enter and visit one of the most famous museums in the world and
+                enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+              </p>
             </div>
-
-            <div class="section_video_controls" id="controls">
-              <div class="controls_item">
-                <!-- class="control_button a_button control unSelected" -->
-                <button class="control_button play unSelected" id="play">
-                  <img
-                    src="./assets/images/svg/controls_play.svg"
-                    alt="button play"
-                  />
-                </button>
-                <!-- class="control_button a_button control unSelected" -->
-                <button class="control_button pause selected" id="pause">
-                  <img
-                    src="./assets/images/svg/controls_pause.svg"
-                    alt="button pause"
-                  />
-                </button>
-              </div>
-
-              <div class="controls_item wrap_progress_bar">
-                <input
-                  type="range"
-                  id="video_progress_bar"
-                  class="video_progress_bar"
-                />
-              </div>
-
-              <div class="controls_item">
-                <!-- class="videoplayer_control_button a_button control unSelected" -->
-                <button class="control_button mute unSelected" id="mute">
-                  <img
-                    src="./assets/images/svg/controls_mute.svg"
-                    alt="button mute"
-                  />
-                </button>
-                <input type="range" id="volume_bar" class="volume_bar" />
-                <button
-                  class="control_button fullScreen unSelected"
-                  id="fullScreen"
+            
+            <div class="wrap_videoPlayer" id="videoDiv">
+              <div class="main_interface">
+                <div class="video_wrapper">
+                  <video id="video" poster="./assets/video/poster.png"></video>
+                </div>
+                <div
+                  class="main_interface_button_play big_play unSelected"
+                  id="big_play"
                 >
                   <img
-                    src="./assets/images/svg/controls_full_screen.svg"
-                    alt="button full screen"
+                    src="./assets/images/svg/controls_play.svg"
+                    alt="button play main"
                   />
-                </button>
+                </div>
+              </div>
+  
+              <div class="section_video_controls" id="controls">
+                <div class="controls_item">
+                  <!-- class="control_button a_button control unSelected" -->
+                  <button class="control_button play unSelected" id="play">
+                    <img
+                      src="./assets/images/svg/controls_play.svg"
+                      alt="button play"
+                    />
+                  </button>
+                  <!-- class="control_button a_button control unSelected" -->
+                  <button class="control_button pause selected" id="pause">
+                    <img
+                      src="./assets/images/svg/controls_pause.svg"
+                      alt="button pause"
+                    />
+                  </button>
+                </div>
+  
+                <div class="controls_item wrap_progress_bar">
+                  <input
+                    type="range"
+                    id="video_progress_bar"
+                    class="video_progress_bar"
+                  />
+                </div>
+  
+                <div class="controls_item">
+                  <!-- class="videoplayer_control_button a_button control unSelected" -->
+                  <button class="control_button mute unSelected" id="mute">
+                    <img
+                      src="./assets/images/svg/controls_mute.svg"
+                      alt="button mute"
+                    />
+                  </button>
+                  <input type="range" id="volume_bar" class="volume_bar" />
+                  <button
+                    class="control_button fullScreen unSelected"
+                    id="fullScreen"
+                  >
+                    <img
+                      src="./assets/images/svg/controls_full_screen.svg"
+                      alt="button full screen"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div id="videoSelection" class="videoSelection">
-            <div class="video-youtube-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/Ejer80zJBDI"
-                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+  
+            <div id="videoSelection" class="videoSelection">
+              <div class="video-youtube-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/Ejer80zJBDI"
+                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-youtube-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
+                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-youtube-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/MufP60vnLnU"
+                  allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-            <div class="video-youtube-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/9X6hH-Z1Tyw"
-                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="video-youtube-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/MufP60vnLnU"
-                allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="section_videoPlayer_slider_control">
-            <div class="section_videoPlayer_slider_octagon">
-              <button class="slider_control_octagon"></button>
-              <button class="slider_control_octagon"></button>
-              <button class="slider_control_octagon"></button>
-              <button class="slider_control_octagon"></button>
-              <button class="slider_control_octagon"></button>
+  
+            <div class="section_videoPlayer_slider_control">
+              <div class="section_videoPlayer_slider_octagon">
+                <button class="slider_control_octagon"></button>
+                <button class="slider_control_octagon"></button>
+                <button class="slider_control_octagon"></button>
+                <button class="slider_control_octagon"></button>
+                <button class="slider_control_octagon"></button>
+              </div>
             </div>
           </div>
         </div>
@@ -696,5 +698,6 @@
     </footer>
     <script src="./assets/script/header_and_welcome.js"></script>
     <script src="./assets/script/explore.js"></script>
+    <script src="./assets/script/video.js"></script>
   </body>
 </html>
